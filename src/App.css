@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Anta&family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Varela+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Merriweather", serif;
 }
 body {
   overflow-x: hidden;
@@ -393,10 +394,11 @@ font-weight: 400;
 
 .flip-card {
   background-color: transparent;
-  width: 340px;
+  width: 300px;
   height: 430px;
   perspective: 1000px;
-  /* margin: 20px; */
+  margin: 20px;
+
   /* margin: auto; */
   /* margin-bottom: 20px; */
   /* margin: 0 30px; */

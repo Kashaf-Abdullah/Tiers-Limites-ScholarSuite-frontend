@@ -13,8 +13,8 @@ const ServicesCard = ({ para, fronthead1, fronthead2, image, icon: Icon }) => {
   };
 
   return (
-    <div className="col-lg-4 col-md-4 col-sm-12">
-      <div className="flip-card" tabIndex="0">
+    <div className="col-lg-4 col-md-12 col-sm-12">
+      <div className="flip-card" tabIndex="0" style={{margin:"10px auto"}}>
         <div className="flip-card-inner">
           <div className="flip-card-front" style={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", borderRadius: "20px" }}>
             <Icon style={{ color: 'var(--darkgreen)', fontSize: '6.5rem' }} />

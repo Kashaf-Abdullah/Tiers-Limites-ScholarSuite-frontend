@@ -54,25 +54,29 @@ const NavSocialLink = () => {
 
       
     }}>
-    <Container  
+    <Container   fluid
    >
       <Row  style={{position:"relative",top:"2px"}}>
         <Col lg={6} md={6} sm={6} xs={6}>
-          <FaFacebook style={iconStyle} />
-          <a href="https://www.instagram.com/scholar.suites?igsh=ZXpoOHpoNzUwanJ6" target="_blank" rel="noopener noreferrer"
+          {/* <FaFacebook style={iconStyle} /> */}
+          {/* <a href="https://www.instagram.com/scholar.suites?igsh=ZXpoOHpoNzUwanJ6" target="_blank" rel="noopener noreferrer"
           style={{color:"var(--darkgreen)"}}>
             <FaInstagram style={iconStyle} />
-          </a>
-          <FaLinkedin style={iconStyle} />
+          </a> */}
+          {/* <FaLinkedin style={iconStyle} /> */}
+           
+<span style={{ fontSize: textFontSize }}>
+            
+      <a href="tel:+16174857016" style={{color:"black",textDecoration:"none"}}><FaPhone style={iconStyle} />+1 (617) 485-7016</a>
+    </span>
         </Col>
         <Col lg={6} md={6} sm={6} xs={6} style={{ display: "flex", alignItems: "flex-end",justifyContent:"flex-end" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
-            <FaPhone style={iconStyle} />
-            <span style={{ fontSize: textFontSize }}>+1 (617) 485-7016
-</span>
-            <FaAddressBook style={iconStyle} />
-            <span style={{ fontSize: textFontSize }}>scholarsuites1@gmail.com </span>
-          </div>
+              <span style={{ fontSize: textFontSize }}>
+      <a href="mailto:scholarsuites1@gmail.com"  style={{color:"black",textDecoration:"none"}}><FaAddressBook style={iconStyle} />
+      scholarsuites1@gmail.com</a>
+    </span>
+           </div>
         </Col>
       </Row>
     </Container>

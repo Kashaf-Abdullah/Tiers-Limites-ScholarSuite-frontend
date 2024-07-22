@@ -52,7 +52,7 @@ function Navbarr() {
         
       }}
     >
-      <Container style={{ backgroundColor: "#f9f1f1" }}>
+      <Container fluid style={{ backgroundColor: "#f9f1f1" }}>
       <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
           <img
             src={logo}
@@ -101,16 +101,19 @@ function Navbarr() {
           </Nav>
 
         
-          <Form className="d-flex nav-btns" style={{ display: "flex", flexWrap: "wrap" }}>
-            {isLoggedIn ? (
-              <Button onClick={handleLogout} className="button-29" role="button">
+          <Form className="d-flex nav-btns" style={{ display: "flex", flexWrap: "wrap",marginBottom:"1rem" }}>
+            {/* {isLoggedIn ? (
+              <Button  className="button-29" role="button" onClick={() => { handleLogout(); handleNavLinkClick(); }}>
                 Logout
               </Button>
             ) : (
-              <Link to="/signup" className="button-29" role="button">
+              <Link to="/signup" className="button-29" role="button" onClick={handleNavLinkClick}>
                 Book Now
               </Link>
-            )}
+            )} */}
+            <Link to="/available-listing" className="button-29" role="button" onClick={handleNavLinkClick}>
+                Book Now
+              </Link>
           </Form>
         </Navbar.Collapse>
       </Container>

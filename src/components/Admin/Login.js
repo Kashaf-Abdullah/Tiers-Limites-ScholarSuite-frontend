@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Container, Form, Button, Alert } from 'react-bootstrap';
+import { Container, Form, Button, Alert, Row, Col } from 'react-bootstrap';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -25,10 +25,16 @@ const Login = () => {
   };
 
   return (
-    <Container className="mt-5" style={{padding:"8rem 0"}}>
-      <div  style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Container className="mt-5" style={{padding:"8rem 10%"}}>
+      <Row  style={{ display: 'flex', justifyContent: 'space-between' }}>
         {/* Left side: Login form */}
-        <div style={{ width: '50%', paddingRight: '2rem' }}>
+        <Col lg={6} md={12} sm={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff', padding: '2rem', borderRadius: '8px' }}>
+          <div style={{ textAlign: 'center' }}>
+            <h1>Hey! Welcome to Scholar Suites</h1>
+            <p className="mt-4">Scholar Suites provides affordable and convenient off-campus housing for students. Experience dorm life without restrictions but with benefits like clean common spaces, private bedrooms, and fully furnished common areas</p>
+          </div>
+        </Col>
+        <Col lg={6} md={12} sm={12} style={{ paddingRight: '2rem' }}>
           <h2 className=" mb-4 sec-title">Login</h2>
           <Form onSubmit={handleLogin}>
             {error && <Alert variant="danger">{error}</Alert>}
@@ -59,15 +65,10 @@ const Login = () => {
                Signup Here
             </Link>{" "}</p>
           </Form>
-        </div>
+        </Col>
         {/* Right side: Welcome text */}
-        <div style={{ width: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff', padding: '2rem', borderRadius: '8px' }}>
-          <div style={{ textAlign: 'center' }}>
-            <h1>Hey! Welcome to Scholar Suites</h1>
-            <p className="mt-4">Scholar Suites provides affordable and convenient off-campus housing for students. Experience dorm life without restrictions but with benefits like clean common spaces, private bedrooms, and fully furnished common areas</p>
-          </div>
-        </div>
-      </div>
+      
+      </Row>
     </Container>
   );
 };

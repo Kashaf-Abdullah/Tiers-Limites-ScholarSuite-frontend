@@ -55,8 +55,7 @@ right:"14px"
             <FaInstagram style={iconStyle} />
           </a>
             <FaYoutube style={iconStyle} />
-            <FaPinterest style={iconStyle} />
-            <FaTwitter style={iconStyle} />
+         
             <FaLinkedin style={iconStyle} />
         </div>
 

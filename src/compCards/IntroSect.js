@@ -42,8 +42,7 @@ const IntroSect = (props) => {
             <FaInstagram style={iconStyle} />
           </a>
             <FaYoutube style={iconStyle} />
-            <FaPinterest style={iconStyle} />
-            <FaTwitter style={iconStyle} />
+       
             <FaLinkedin style={iconStyle} />
         </div>
 
